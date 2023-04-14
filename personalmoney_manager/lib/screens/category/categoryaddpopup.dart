@@ -20,7 +20,7 @@ Future<void> showcategortasspopup(BuildContext context) async {
             child: TextFormField(
               controller: namedittingcontroller,
               decoration: InputDecoration(
-                hintText: 'Category name',
+                hintText: 'Category name ',
                 border: OutlineInputBorder(),
               ),
             ),
