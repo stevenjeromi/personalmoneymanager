@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:personalmoney_manager/models/category/categorymodel.dart';
+import 'package:personalmoney_manager/screens/add_transaction/add_transactions.dart';
 import 'package:personalmoney_manager/screens/category/category.dart';
 import 'package:personalmoney_manager/screens/home/home.dart';
 
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const home(),
+      routes: {'add_transactions': (context) => const screentransaction()},
     );
   }
 }

@@ -34,6 +34,7 @@ class home extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             if (selected.value == 0) {
+              Navigator.of(context).pushNamed('add_transactions');
             } else {
               showcategortasspopup(context);
 

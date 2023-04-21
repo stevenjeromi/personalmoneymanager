@@ -21,7 +21,9 @@ class incomecat extends StatelessWidget {
                   child: ListTile(
                     title: Text(category.name),
                     trailing: IconButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        categoryDB.instance.deletecategory(category.id);
+                      },
                       icon: const Icon(Icons.delete),
                     ),
                   ),
