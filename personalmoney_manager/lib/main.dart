@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:personalmoney_manager/models/category/categorymodel.dart';
+import 'package:personalmoney_manager/models/transactions/transactionmodel.dart';
 import 'package:personalmoney_manager/screens/add_transaction/add_transactions.dart';
 import 'package:personalmoney_manager/screens/category/category.dart';
 import 'package:personalmoney_manager/screens/home/home.dart';
@@ -15,6 +16,10 @@ Future<void> main() async {
 
   if (Hive.isAdapterRegistered(categorymodelAdapter().typeId)) {
     Hive.registerAdapter(categorymodelAdapter());
+  }
+
+  if (Hive.isAdapterRegistered(TransactionAdapter().typeId)) {
+    Hive.registerAdapter(TransactionAdapter());
   }
 
   runApp(const MyApp());
